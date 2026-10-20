@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональний сайт-візитка та портфоліо учня 10 класу школи №141 ОРТ м. Києва">
+  <title>Іван — Персональний сайт-візитка</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Шрифти без сторонніх важких бібліотек: системні шрифти високої чіткості -->
+</head>
+<body>
+
+  <!-- Навігаційна панель -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>Іван<span class="brand-slash">/</span><span class="brand-bracket">&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Про мене</a></li>
+          <li><a href="#hobbies" class="nav-link">Інтереси</a></li>
+          <li><a href="#subjects" class="nav-link">Предмети</a></li>
+          <li><a href="#achievements" class="nav-link">Досягнення</a></li>
+          <li><a href="#contact" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggle" title="Змінити тему оформлення" aria-label="Перемкнути тему">
+          <span class="theme-icon" id="themeIcon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Головний екран (Hero) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Учень 10-го класу • Школа №141 «ОРТ»
+          </div>
+          <h1 class="hero-title">
+            Привіт, я <span class="highlight">Іван</span>! 👋
+          </h1>
+          <p class="hero-subtitle">
+            Захоплююсь технологіями, програмуванням та природничими науками. Прагну створювати корисні та сучасні цифрові продукти.
+          </p>
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">Більше про мене</a>
+            <a href="#contact" class="btn btn-outline">Зв'язатися зі мною</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10</span>
+              <span class="stat-label">Клас навчання</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Улюблених предметів</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Мотивації</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <!-- Стилізований векторний аватар без зовнішніх файлів -->
+              <svg class="avatar-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="58" fill="url(#avatar-grad)" stroke="var(--primary-color)" stroke-width="3"/>
+                <circle cx="60" cy="46" r="22" fill="var(--text-light)"/>
+                <path d="M26 98C26 80 41 72 60 72C79 72 94 80 94 98" fill="var(--text-light)"/>
+                <defs>
+                  <linearGradient id="avatar-grad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4f46e5" stop-opacity="0.3"/>
+                    <stop offset="1" stop-color="#06b6d4" stop-opacity="0.3"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="floating-tag tag-code">&lt;Code /&gt;</div>
+              <div class="floating-tag tag-stem">🔬 STEM</div>
+              <div class="floating-tag tag-nature">🍂 Дослідження</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Про мене" -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Хто я?</span>
+          <h2 class="section-title">Про мене</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Вітаю на моїй персональній сторінці!</h3>
+            <p>
+              Я учень 10-го класу <strong>Спеціалізованої школи №141 «ОРТ» міста Києва</strong>. 
+              Мене завжди надихав пошук відповідей на складні запитання та вивчення того, як влаштований світ навколо — 
+              як у цифровому просторі, так і в живій природі.
+            </p>
+            <p>
+              У школі я активно вивчаю технологічні дисципліни, STEM-напрямки, алгоритмізацію та природничі науки. 
+              Мій девіз — постійне самовдосконалення, допитливість та готовність реалізовувати нові ідеї на практиці.
+            </p>
+
+            <div class="about-details-list">
+              <div class="detail-item">
+                <span class="detail-icon">🏫</span>
+                <div>
+                  <strong>Навчальний заклад:</strong>
+                  <span>Школа №141 «ОРТ» м. Києва</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">🎓</span>
+                <div>
+                  <strong>Клас:</strong>
+                  <span>10 клас</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">📍</span>
+                <div>
+                  <strong>Локація:</strong>
+                  <span>Київ, Україна</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">🎯</span>
+                <div>
+                  <strong>Майбутня мета:</strong>
+                  <span>Розвиток у сфері IT, розробка корисних проєктів</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-values">
+            <div class="value-card">
+              <div class="value-icon">💡</div>
+              <h4>Творчість та креатив</h4>
+              <p>Люблю шукати нестандартні підходи до вирішення щоденних навчальних завдань.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">⚡</div>
+              <h4>Наполегливість</h4>
+              <p>Працюю до досягнення результату, перетворюючи помилки на цінний досвід.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">🤝</div>
+              <h4>Командна робота</h4>
+              <p>Ціную співпрацю з однокласниками у спільних проєктах та хакатонах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Інтереси та Хобі" -->
+    <section class="section hobbies-section" id="hobbies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Чим я захоплююсь</span>
+          <h2 class="section-title">Інтереси та Хобі</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Світ моїх захоплень охоплює технології, творчість та дослідження довкілля.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="feature-card">
+            <div class="card-icon-badge icon-indigo">💻</div>
+            <h3>Веб-технології & Кодинг</h3>
+            <p>
+              Вивчаю верстку та логіку веб-додатків за допомогою HTML, CSS та JavaScript. Цей сайт створено без сторонніх фреймворків як приклад чистого коду.
+            </p>
+            <div class="tags-container">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon-badge icon-emerald">🍂</div>
+            <h3>Збирання жолудів & Спостереження природи</h3>
+            <p>
+              Особливе хобі — дослідження міських парків Києва, збирання жолудів для вирощування саджанців дубів та вивчення ботанічного різноманіття нашого регіону.
+            </p>
+            <div class="tags-container">
+              <span class="tag">Екологія</span>
+              <span class="tag">Ботаніка</span>
+              <span class="tag">Парки Києва</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon-badge icon-amber">🤖</div>
+            <h3>Робототехніка & Інженерія</h3>
+            <p>
+              Конструювання мікросхем, підключення датчиків та програмування мікроконтролерів у шкільних STEM-лабораторіях ОРТ.
+            </p>
+            <div class="tags-container">
+              <span class="tag">Arduino</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Схеми</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon-badge icon-purple">📚</div>
+            <h3>Читання & Науково-популярна література</h3>
+            <p>
+              Цікавлюсь історією винаходів, астрофізикою та біографіями видатних науковців та засновників технологічних компаній.
+            </p>
+            <div class="tags-container">
+              <span class="tag">Sci-Fi</span>
+              <span class="tag">Non-fiction</span>
+              <span class="tag">Саморозвиток</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Улюблені предмети" -->
+    <section class="section subjects-section" id="subjects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Шкільні дисципліни</span>
+          <h2 class="section-title">Улюблені предмети</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Предмети, вивчення яких приносить мені найбільше задоволення та розвиває навички.</p>
+        </div>
+
+        <div class="subjects-grid">
+          <div class="subject-card">
+            <div class="subject-header">
+              <span class="subject-icon">🖥️</span>
+              <div>
+                <h4>Інформатика</h4>
+                <span class="subject-type">Профільний предмет</span>
+              </div>
+            </div>
+            <p>Опанування алгоритмів, структур даних, логіки програмування та створення сучасних цифрових проєктів.</p>
+            <div class="progress-bar-wrap">
+              <div class="progress-label"><span>Інтерес та прогрес</span><span>98%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 98%;"></div></div>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <div class="subject-header">
+              <span class="subject-icon">📐</span>
+              <div>
+                <h4>Математика (Алгебра & Геометрія)</h4>
+                <span class="subject-type">Точні науки</span>
+              </div>
+            </div>
+            <p>Розвиток логічного та аналітичного мислення, розв'язання рівнянь, робота з функціями та геометричними просторами.</p>
+            <div class="progress-bar-wrap">
+              <div class="progress-label"><span>Інтерес та прогрес</span><span>92%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <div class="subject-header">
+              <span class="subject-icon">⚡</span>
+              <div>
+                <h4>Фізика</h4>
+                <span class="subject-type">Природничі науки</span>
+              </div>
+            </div>
+            <p>Закони природи, електродинаміка, оптика та фізичні основи сучасних електронних компонентів.</p>
+            <div class="progress-bar-wrap">
+              <div class="progress-label"><span>Інтерес та прогрес</span><span>89%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 89%;"></div></div>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <div class="subject-header">
+              <span class="subject-icon">🌍</span>
+              <div>
+                <h4>Англійська мова</h4>
+                <span class="subject-type">Гуманітарний блок</span>
+              </div>
+            </div>
+            <p>Міжнародне спілкування, читання оригінальної технічної документації та навчальних курсів.</p>
+            <div class="progress-bar-wrap">
+              <div class="progress-label"><span>Інтерес та прогрес</span><span>90%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Досягнення" -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Мої кроки вперед</span>
+          <h2 class="section-title">Досягнення та Проєкти</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026 рік</span>
+              <h3>Створення персонального сайту-портфоліо</h3>
+              <p>
+                Розробив чистий статичний сайт-візитку на HTML5, CSS3 та JavaScript, налаштував адаптивну верстку та опублікував проєкт на GitHub Pages за допомогою середовища Antigravity.
+              </p>
+              <span class="badge-accent">Веб-розробка</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 – 2026 н.р.</span>
+              <h3>Участь у шкільних олімпіадах та конкурсах ОРТ</h3>
+              <p>
+                Брав активну участь у навчальних змаганнях з інформатики та точних наук, поглиблюючи знання в галузі алгоритмізації.
+              </p>
+              <span class="badge-accent">Олімпіади</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 рік</span>
+              <h3>STEM-проєкти та досліди</h3>
+              <p>
+                Практична робота з датчиками, моделювання базових автоматизованих систем і проведення спостережень у природі.
+              </p>
+              <span class="badge-accent">STEM & Екологія</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Контакти" -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Зворотний зв'язок</span>
+          <h2 class="section-title">Зв'яжіться зі мною</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">Буду радий відповісти на запитання або обговорити спільні ідеї!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <span class="contact-icon">🏫</span>
+              <div>
+                <h4>Школа</h4>
+                <p>Школа №141 «ОРТ», м. Київ</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">💻</span>
+              <div>
+                <h4>GitHub</h4>
+                <p><a href="https://github.com" target="_blank" rel="noopener noreferrer">Мій профіль GitHub</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <h4>Електронна пошта</h4>
+                <p><a href="mailto:ivan.student@example.com">ivan.student@example.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">📱</span>
+              <div>
+                <h4>Telegram / Месенджер</h4>
+                <p><a href="https://t.me/" target="_blank" rel="noopener noreferrer">@ivan_ort</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Надіслати коротке повідомлення</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Олександр / Марія" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Привіт! Чудовий сайт..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Надіслати повідомлення ✨</button>
+            </form>
+            <div id="formSuccessMessage" class="form-feedback hidden">
+              ✅ Дякую за повідомлення! Воно успішно збережене локально.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Підвал сайту -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Іван. Школа №141 «ОРТ» м. Києва.</p>
+      <p class="footer-sub">Створено за допомогою чистого HTML, CSS та JavaScript для GitHub Pages.</p>
+      <a href="#hero" class="back-to-top" title="Вгору" aria-label="Повернутися нагору">↑ Нагору</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
